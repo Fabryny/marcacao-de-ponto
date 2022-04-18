@@ -1,7 +1,10 @@
+
 export class Lancamento {
-    data: string;
-    tipo: string;
-    localizacao: string;
-    funcionarioId: string;
-    id?: string;
+
+	constructor(public data: string,
+				public tipo: string,
+				public localizacao: string,
+				public funcionarioId: string,
+				public id?: string) {}
+
 }

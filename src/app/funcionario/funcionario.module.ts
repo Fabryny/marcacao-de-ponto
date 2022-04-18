@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FuncionarioComponent } from './funcionario.component';
 import { AngularMaterialImports } from '../compartilhado/utils/anguiar-material-imports';
+import { HttpUtilService } from '../compartilhado/services/http-util/http-util.service';
+import { LancamentoService } from '../compartilhado/services/lancamento/lancamento.service';
 
 
 
@@ -22,5 +24,9 @@ import { AngularMaterialImports } from '../compartilhado/utils/anguiar-material-
     
     RouterModule
   ],
+  providers: [
+    HttpUtilService,
+    LancamentoService
+  ]
 })
 export class FuncionarioModule { }
